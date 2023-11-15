@@ -4,10 +4,10 @@
 /**
  * add_node_to_stack - add node to the head stack
  * @head: head of the stack
- * @num: new_value
+ * @n: new_value
  * Return: no return
 */
-void add_node_to_stack(stack_t **head, int num)
+void add_node_to_stack(stack_t **head, int n)
 {
 
 
@@ -21,7 +21,7 @@ void add_node_to_stack(stack_t **head, int num)
         exit(0); }
     if (aux)
         aux->prev = new_node;
-    new_node->num = num;
+    new_node->n = n;
     new_node->next = *head;
     new_node->prev = NULL;
     *head = new_node;
